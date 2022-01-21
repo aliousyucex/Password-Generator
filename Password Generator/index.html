@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body> 
+        <div Class="borderci">
+            <div Class="sagagec">
+                <table class="orta">
+                    <tr><td></td></tr>
+                     <tr></tr>
+                    <tr>
+                        <td>
+                            <label>Karakter Sayısı:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="len" id="len" value="8">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="checkboxdisable" name="checkboxdisable" value="0" onchange="Pasif(this)">Özel Karakter Pasif</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="checkboxdisable" name="checkboxdisable" checked onchange="Pasif(this)">Özel Karakter Aktif<br></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="orta" id="Pasif" style="display: block">
+                <input type="checkbox" id="tire" name="tire" onchange="Shape(this)" value="-">-
+                <input type="checkbox" id="soru" name="soru" onchange="Shape(this)" value="?">?
+                <input type="checkbox" id="yildiz" name="yildiz" onchange="Shape(this)" value="*">*
+                <input type="checkbox" id="et" name="et" onchange="Shape(this)" value="@">@
+                <br>
+                <input type="checkbox" id="plus" name="plus" onchange="Shape(this)" value="+">+
+                <input type="checkbox" id="unlem" name="unlem" onchange="Shape(this)" value="!">!
+                <input type="checkbox" id="slash" name="slash" onchange="Shape(this)" value="/">/
+                <input type="checkbox" id="dat" name="dat" onchange="Shape(this)" value=".">.
+            </div>
+            <div class="orta">
+                <button name="ol" id="ol" type="submit" onclick="Olustur()" >Şifre Oluştur.</button>
+            </div>
+            
+        </div>
+        <div Class="sagagec">
+            <br>
+            <textarea Class="textarea" id="expasswords" readonly></textarea>
+        </div>
+        
+    </body>
+</html>

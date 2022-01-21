@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    border-left: 1cm;
+}
+
+.sagagec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.textarea{
+    height: 88px;
+    width: 210px;
+    resize: none;
+}
+
+.borderci{
+    background-color: darkgray;
+    height: 182px;
+    border-bottom-right-radius: 5cm;
+    border-top-right-radius: 5cm;
+    border-bottom-left-radius: 5cm;
+    border-top-left-radius: 5cm;
+    text-align: center;
+    border-style: ridge;
+    margin-top: 25%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.check {
+    margin-left: 5%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    font-size: 18px;
+}
+
+.orta{
+    margin-left: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    border-color: red;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake{
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
